@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Personal Portfolio</title>
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      background:#adff2f;
+      display:flex;
+      justify-content:center;
+      padding:20px;
+    }
+    .container{
+      max-width:350px;
+      width:100%;
+      background:black;
+      border-radius:10px;
+      padding:20px;
+      overflow:hidden;
+    }
+    header{
+      text-align:center;
+      padding-bottom:20px;
+      border-bottom:1px solid #adff2f;
+    }
+    header img {
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      margin-bottom:15px;
+      border:3px solid #adff2f;
+    }
+    header h1{
+      font-size:2;
+      color:#adff2f;
+      margin-bottom:8px;
+    }
+    header p{
+      font-size:1;
+      color:#90ee90;
+    }
+    section{
+      margin-top:20px;
+    }
+    section h2{
+      font-size:1;
+      color:#adff2f;
+      margin-bottom:12px;
+      border-bottom:2px solid #adff2f;
+      display:inline-block;
+    }
+    .contact-info{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      font-size:0.9rem;
+      color:#90ee90;
+    }
+    .contact-info a {
+      color:#90ee90f;
+      word-break:break-word;
+    }
+    .contact-info a:hover {
+      text-decoration:underline;
+    }
+    .skills-list {
+      list-style:none;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .skills-list li{
+      background:#adff2f;
+      color:black;
+      font-size:0.85;
+      padding:6px 12px;
+      border-radius:20px;
+      font-weight:600;
+    }
+    .portfolio-list {
+      list-style:none;
+    }
+    .portfolio-list li{
+      margin-bottom:15px;
+    }
+    .portfolio-list a {
+      color:#90ee90f;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .portfolio-list a:hover{
+      text-decoration:underline;
+    }
+    .resume-link{
+      display:inline-block;
+      margin-top:10px;
+      background:#adff2f;
+      color:black;
+      padding:8px 16px;
+      border-radius:25px;
+      font-weight:700;
+      text-decoration:none;
+    }
+    .resume-link:hover {
+      background:#adff2f;
+    }
+    @media (max-width: 400px) {
+      body {
+        padding: 10px;
+      }
+      .container {
+        padding: 15px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <img src="https://i.pravatar.cc/150?img=12" alt="Your portrait"/>
+      <h1>Mohan Sharma</h1>
+      <p>Web-site developer and designer</p>
+    </header>
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Information</h2>
+      <div class="contact-info">
+        <div>Email: <a href="mailto:mohansharma@example.com">mohansharma@example.com</a></div>
+        <div>Phone: <a href="tel:+1234567890">+1 234 567 890</a></div>
+        <div>Website: <a href="https://mohansharma.com" target="_blank" rel="noopener noreferrer">mohansharma.com</a></div>
+        <div>LinkedIn: <a href="https://linkedin.com/in/mohansharma" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohansharma</a></div>
+        <div>GitHub: <a href="https://github.com/mohansharma" target="_blank" rel="noopener noreferrer">github.com/mohansharma</a></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-list" aria-label="List of skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading">Portfolio</h2>
+      <ul class="portfolio-list">
+        <li>
+          <a href="https://example.com/project1" target="_blank" rel="noopener noreferrer">Project One - Responsive Website</a>
+        </li>
+        <li>
+          <a href="https://example.com/project2" target="_blank" rel="noopener noreferrer">Project Two - JavaScript Game</a>
+        </li>
+        <li>
+          <a href="https://example.com/project3" target="_blank" rel="noopener noreferrer">Project Three - Portfolio Site</a>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="resume-heading">
+      <h2 id="resume-heading">Resume</h2>
+      <a class="resume-link" href="https://example.com/johndoe_resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume</a>
+    </section>
+  </div>
+</body>
+</html>
